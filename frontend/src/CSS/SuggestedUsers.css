@@ -1,0 +1,56 @@
+/* SuggestedUsers.css */
+.suggested-container {
+    margin: 2.5rem 0;
+}
+
+.suggested-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.suggested-header-title {
+    font-weight: 600;
+    color: #4B5563; /* Gray-600 */
+}
+
+.suggested-see-all {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.suggested-user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.25rem 0;
+}
+
+.suggested-user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.suggested-user-name {
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.suggested-user-bio {
+    color: #4B5563; /* Gray-600 */
+    font-size: 0.875rem;
+}
+
+.follow-button {
+    color: #3BADF8;
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.follow-button:hover {
+    color: #3495d6;
+}

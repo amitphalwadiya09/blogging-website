@@ -1,0 +1,113 @@
+/* Signup.css */
+
+/* Container for centering the form */
+.signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f0f0; /* Optional: background color */
+  }
+  
+  /* Styling for the form */
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* 5 spacing units */
+    padding: 2rem; /* 8 spacing units */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White background for the form */
+  }
+  
+  /* Heading styling */
+  .signup-form h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem; /* 1.25rem = 20px */
+  }
+  
+  /* Paragraph styling */
+  .signup-form p {
+    text-align: center;
+    font-size: 0.875rem; /* 0.875rem = 14px */
+  }
+  
+  /* Label styling */
+  .signup-form .label {
+   
+    font-weight: 500;
+  }
+  
+  /* Input field styling */
+  .signup-form .input {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Button styling */
+  .signup-form .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #0F172A;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-form .button.loading {
+    background-color: #007bb5;
+
+  }
+  
+  .signup-form .button:hover {
+    /* background-color: #007bb5; */
+    background-color: #e7f0f7;
+    color: #0F172A;
+  }
+  
+  /* Link styling */
+  .signup-form .link {
+    color: #007bb5;
+    text-decoration: none;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .signup-form {
+      padding: 1.5rem; /* Reduce padding for smaller screens */
+    }
+  
+    .signup-form h1 {
+      font-size: 1rem; /* Reduce font size */
+    }
+  
+    .signup-form p {
+      font-size: 0.75rem; /* Reduce font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .signup-form {
+      padding: 1rem; /* Further reduce padding for very small screens */
+    }
+  
+    .signup-form h1 {
+      font-size: 0.875rem; /* Further reduce font size */
+    }
+  
+    .signup-form p {
+      font-size: 0.625rem; /* Further reduce font size */
+    }
+  }
+  

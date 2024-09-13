@@ -1,0 +1,135 @@
+/* Container for each post */
+.post-container {
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header section of the post */
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-header .avatar-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.post-header .username-group {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Post image */
+.post-image {
+    border-radius: 0.25rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* Action buttons under the post image */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.post-actions .like-icon,
+.post-actions .comment-icon,
+.post-actions .send-icon,
+.post-actions .bookmark-icon {
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.post-actions .like-icon:hover,
+.post-actions .comment-icon:hover,
+.post-actions .send-icon:hover,
+.post-actions .bookmark-icon:hover {
+    color: #4b5563; /* Tailwind's gray-600 */
+}
+
+/* Like count and caption */
+.post-likes {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.post-caption {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-caption .username {
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.post-comments {
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: #9ca3af; /* Tailwind's gray-400 */
+    margin-top: 0.5rem;
+}
+
+/* Comment input section */
+.comment-input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-input {
+    outline: none;
+    font-size: 0.875rem;
+    width: 100%;
+}
+
+.post-submit-button {
+    color: #3b82f6; /* Tailwind's blue-500 */
+    cursor: pointer;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .post-container {
+        max-width: 100%;
+        margin: 1rem;
+        margin-top: 100px;
+    }
+
+    .post-header .avatar-group {
+        gap: 0.25rem;
+    }
+
+    .post-header .username-group {
+        gap: 0.5rem;
+    }
+
+    .post-image {
+        border-radius: 0.125rem;
+    }
+
+    .post-actions .like-icon,
+    .post-actions .comment-icon,
+    .post-actions .send-icon,
+    .post-actions .bookmark-icon {
+        font-size: 1.5rem;
+    }
+
+    .post-likes,
+    .post-caption,
+    .post-comments {
+        font-size: 0.75rem;
+    }
+}
+

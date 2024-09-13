@@ -1,0 +1,56 @@
+/* LeftSidebar.css */
+
+/* Base styling for the sidebar */
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 16%; /* Adjust as needed */
+  height: 100vh; /* Full viewport height */
+  position: fixed; /* Fix to the viewport */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  background-color: #ffffff; /* Background color */
+  border-right: 1px solid #d1d5db; /* Border for separation */
+  z-index: 10; /* Ensure it appears above other content */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* Styling for sidebar content */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for sidebar icons on small screens */
+.sidebar-icons {
+  display: none; /* Hidden by default */
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+  .left-sidebar {
+    width: 100%; /* Full width on small screens */
+    height: auto; /* Height adjusts to content */
+    bottom: 0; /* Stick to the bottom on small screens */
+    top: auto; /* Remove top alignment */
+    border-right: none; /* Remove right border on small screens */
+    border-top: 1px solid #d1d5db; /* Add top border for small screens */
+  }
+
+  .sidebar-content {
+    display: none; /* Hide sidebar content on small screens */
+  }
+
+  .sidebar-icons {
+    display: flex; /* Show icons on small screens */
+    justify-content: space-around; /* Distribute icons evenly */
+    width: 100%; /* Full width on small screens */
+    background-color: #ffffff; /* Background color for icons */
+    padding: 0.5rem 0; /* Padding for spacing */
+    border-top: 1px solid #d1d5db; /* Top border for separation */
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Stick to the bottom */
+    left: 0; /* Align to the left */
+    z-index: 20; /* Ensure icons appear above other content */
+  }
+}

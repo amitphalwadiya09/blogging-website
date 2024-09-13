@@ -1,0 +1,47 @@
+/* MainLayout.css */
+
+/* Layout container */
+.main-layout {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar styling */
+.left-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16%;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    background-color: #fff;
+    z-index: 10; /* Ensure it's above other content */
+}
+
+/* Content area */
+.content {
+    margin-left: 16%; /* Offset for the fixed sidebar */
+    width: 84%;
+    padding: 1rem;
+    overflow-y: auto; /* Ensure content can scroll if it overflows */
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column; /* Stack sidebar and content vertically on smaller screens */
+    }
+
+    .left-sidebar {
+        position: relative; /* Remove fixed positioning */
+        width: 100%;
+        height: auto;
+        border-right: none; /* Remove the right border */
+        border-bottom: 1px solid #ddd; /* Add bottom border */
+    }
+
+    .content {
+        margin-left: 0; /* Remove left margin */
+        width: 100%; /* Full width on smaller screens */
+    }
+}

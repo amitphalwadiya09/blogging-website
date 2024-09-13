@@ -1,0 +1,77 @@
+/* Home.css */
+
+/* Main container for the home page */
+.home-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* Flex grow section for the feed and outlet */
+.feed-outlet-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 2rem; /* Space between feed and sidebar */
+}
+
+/* Sidebar container */
+.right-sidebar-container {
+    min-width: 20%;
+    max-width: 300px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feed-outlet-container {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .right-sidebar-container {
+        width: 100%;
+        /* max-width: none; */
+        margin-top: 2rem; /* Add spacing between feed and sidebar */
+    }
+    .afterMedia
+    {
+        width: 100%;
+        /* max-width: none; */
+        /* Add spacing between feed and sidebar */
+    }
+}
+
+/* Bottom navigation for mobile */
+.bottom-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        justify-content: space-around;
+        padding: 1rem;
+        border-top: 1px solid #e0e0e0;
+        z-index: 10;
+    }
+    .right-sidebar-container{
+        display: none;
+    }
+    .bottom-nav a {
+        text-decoration: none;
+        color: #555;
+        font-size: 1.5rem;
+    }
+}

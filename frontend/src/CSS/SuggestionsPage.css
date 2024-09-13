@@ -1,0 +1,11 @@
+/* SuggestionsPage.css */
+.suggestions-page {
+    padding: 1rem;
+  }
+  
+  .suggestions-page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827; /* Gray-900 */
+    margin-bottom: 1.5rem;
+  }

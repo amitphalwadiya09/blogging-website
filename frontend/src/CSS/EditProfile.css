@@ -1,0 +1,116 @@
+/* EditProfile.css */
+
+/* Container for the profile edit page */
+.edit-profile-container {
+    display: flex;
+    max-width: 32rem; /* max-w-2xl */
+    margin: 0 auto;
+    padding-left: 2.5rem; /* pl-10 */
+}
+
+/* Section for profile editing */
+.edit-profile-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 2rem 0; /* my-8 */
+}
+
+/* Header for the edit profile page */
+.edit-profile-header {
+    font-weight: bold;
+    font-size: 1.25rem; /* text-xl */
+}
+
+/* Profile photo container */
+.profile-photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F3F4F6; /* bg-gray-100 */
+    border-radius: 0.75rem; /* rounded-xl */
+    padding: 1rem; /* p-4 */
+}
+
+/* Flex container for avatar and bio */
+.profile-photo-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; /* gap-3 */
+}
+
+/* Username text */
+.profile-username {
+    font-weight: bold;
+    font-size: 0.875rem; /* text-sm */
+}
+
+/* Bio text */
+.profile-bio {
+    color: #6B7280; /* text-gray-600 */
+}
+
+/* Hidden file input */
+.profile-photo-input {
+    display: none;
+}
+
+/* Change photo button */
+.change-photo-btn {
+    background-color: #0095F6;
+    height: 2rem; /* h-8 */
+}
+
+.change-photo-btn:hover {
+    background-color: #318bc7;
+}
+
+/* Bio section */
+.bio-section {
+    margin-bottom: 1.5rem;
+}
+
+/* Gender section */
+.gender-section {
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+/* Button container */
+.submit-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Submit button */
+.submit-button {
+    width: fit-content;
+    background-color: #0095F6;
+}
+
+.submit-button:hover {
+    background-color: #2a8ccd;
+}
+
+/* Loader button styling */
+.loader-btn {
+    display: flex;
+    align-items: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .edit-profile-container {
+        padding-left: 1rem; /* Reduced padding */
+    }
+
+    .profile-photo-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .change-photo-btn {
+        width: 100%; /* Full width button on smaller screens */
+        margin-top: 0.75rem; /* Add spacing between button and avatar */
+    }
+}

@@ -1,0 +1,17 @@
+/* Container for the list of posts */
+.posts-container {
+    padding: 1rem;
+}
+
+/* Ensure the posts are responsive */
+.posts-container .post {
+    margin-bottom: 2rem;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .posts-container {
+        padding: 0.5rem;
+        /* margin-top: 40px; */
+    }
+}

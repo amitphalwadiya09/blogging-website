@@ -1,0 +1,20 @@
+/* Comment.css */
+.comment-container {
+    margin: 0.5rem 0;
+}
+
+.comment-content {
+    display: flex;
+    gap: 0.75rem; /* gap-3 */
+    align-items: center;
+}
+
+.comment-author {
+    font-weight: bold;
+    font-size: 0.875rem; /* text-sm */
+}
+
+.comment-text {
+    font-weight: normal;
+    padding-left: 0.25rem; /* pl-1 */
+}

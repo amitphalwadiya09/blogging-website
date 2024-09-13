@@ -1,0 +1,24 @@
+/* Feed.css */
+
+/* Container for the feed */
+.feed-container {
+    flex: 1;
+    margin: 2rem 0; /* my-8 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20%; /* pl-[20%] */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1024px) {
+    .feed-container {
+        padding-left: 5%; /* Reduce padding on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .feed-container {
+        padding-left: 2%; /* Even less padding for mobile screens */
+    }
+}

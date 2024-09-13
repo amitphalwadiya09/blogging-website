@@ -1,0 +1,123 @@
+/* Login.css */
+
+/* Container for centering the form */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f9f9f9; /* Optional: Background color for the whole screen */
+}
+
+/* Form styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    max-width: 400px; /* Limit the width of the form */
+    width: 100%; /* Ensure it scales down on smaller screens */
+}
+
+/* Form title and description */
+.login-header {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.login-header h1 {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.login-header p {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* Input labels */
+.input-label {
+    font-weight: 500;
+}
+
+/* Input fields */
+.input-field {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Button styles */
+.button {
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    background-color: #ccc;
+}
+
+.button-primary {
+    background-color: #0095f6;
+    color: white;
+}
+
+.button-primary:hover {
+    background-color: #007bb5;
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: #0095f6;
+    border: 1px solid #0095f6;
+}
+
+.button-secondary:hover {
+    background-color: #e7f0f7;
+}
+
+/* Link styles */
+.link {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+    .login-form {
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .login-header h1 {
+        font-size: 1rem;
+    }
+
+    .login-header p {
+        font-size: 0.75rem;
+    }
+
+    .input-field {
+        font-size: 0.875rem;
+    }
+
+    .button {
+        font-size: 0.875rem;
+    }
+}

@@ -1,0 +1,28 @@
+/* ProtectedRoutes.css */
+
+/* Styles for the loading state or redirect message */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .loading-message {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .loading-message {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .loading-message {
+      font-size: 0.9rem;
+    }
+  }
+  

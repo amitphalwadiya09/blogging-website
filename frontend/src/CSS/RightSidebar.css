@@ -1,0 +1,126 @@
+/* RightSidebar.css */
+
+.right-sidebar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 20%; /* Adjust width as needed */
+  padding: 1rem;
+  background-color: #ffffff;
+  border-left: 1px solid #d1d5db;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 10;
+}
+.afterMedia{
+  display: none;
+}
+/* Adjustments for large screens */
+@media (min-width: 769px) {
+  .after_media{
+    display: none;
+  }
+.heading
+{
+  display:block;
+  width: 100%;
+  font-weight: 600;
+  padding-left: 20%;
+  margin-left: 50%;
+}
+  
+  .hippo {
+    display: none; /* Adjust to fit within the container */
+  }
+  .right-sidebar {
+    position: fixed;
+    width: 20%;
+    border-left: 1px solid #d1d5db;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    
+  }
+
+  .suggestions-button {
+    display: none; /* Hide the button on larger screens if needed */
+  }
+}
+.right-sidebar-icon{
+  display: none;
+}
+
+/* Base styles for the sidebar */
+.afterMedia {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-left: 1px solid #d1d5db;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+  .right-sidebar-content{
+    display:none;
+    z-index: -19;
+  }
+  .right-sidebar{
+    display: none;
+  }
+  .afterMedia {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    /* padding: 0.5rem; */
+    background-color: #ffffff;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    margin-top: 0%;
+    height: 50px;
+  }
+
+  .hippo {
+    padding-left: 1rem; /* Adjust to fit within the container */
+  }
+
+  .heading {
+    flex-grow: 1;
+    /* height: 10%; */
+    text-align: center;
+    font-weight: 700;
+    margin: 0; /* Ensure no margin pushing it down */
+  }
+
+  .right-sidebar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #030303;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative; /* Use relative positioning instead of absolute */
+    margin-left: 1rem; /* Add some margin to avoid being too close to the edge */
+    z-index: 21;
+    margin-right: 1rem;
+  }
+
+  /* body {
+    /* margin-top: 3rem; Ensure the content below starts below the fixed navbar */
+  /* } */ 
+}
