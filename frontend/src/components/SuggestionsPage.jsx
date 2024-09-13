@@ -1,6 +1,6 @@
-import React from 'react';
-import SuggestedUsers from './SuggestedUsers'; // Import the SuggestedUsers component
-import '../CSS/SuggestionsPage.css'; // Import any additional CSS if needed
+import React from "react";
+import SuggestedUsers from "./SuggestedUsers"; // Import the SuggestedUsers component
+import "../CSS/SuggestionsPage.css"; // Import any additional CSS if needed
 
 const SuggestionsPage = () => {
   return (
