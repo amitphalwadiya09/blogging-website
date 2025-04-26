@@ -9,6 +9,7 @@ import Messages from "./Messages";
 import axios from "axios";
 import { setMessages } from "@/redux/chatSlice";
 import "../CSS/ChatPage.css"; // Import the CSS file
+import LeftSidebar from "./LeftSidebar";
 
 const ChatPage = () => {
   const [textMessage, setTextMessage] = useState("");

@@ -15,7 +15,7 @@
     height: 100%;
     border-right: 1px solid #ddd;
     background-color: #fff;
-    z-index: 10; /* Ensure it's above other content */
+    z-index: -10; /* Ensure it's above other content */
 }
 
 /* Content area */
@@ -33,11 +33,12 @@
     }
 
     .left-sidebar {
-        position: relative; /* Remove fixed positioning */
+        /* Remove fixed positioning */
         width: 100%;
         height: auto;
         border-right: none; /* Remove the right border */
         border-bottom: 1px solid #ddd; /* Add bottom border */
+        display: none;
     }
 
     .content {
@@ -45,3 +46,14 @@
         width: 100%; /* Full width on smaller screens */
     }
 }
+/* MainLayout.css */
+
+/* Ensure the container handles layout without the sidebar */
+.container {
+    display: flex;
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  

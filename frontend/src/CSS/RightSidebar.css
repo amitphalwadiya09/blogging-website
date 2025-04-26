@@ -62,7 +62,17 @@
   background-color: #ffffff;
   border-left: 1px solid #d1d5db;
 }
-
+.left-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16%;
+  height: 100%;
+  border-right: 1px solid #ddd;
+  background-color: #fff;
+  z-index: -10;
+  display: none;
+}
 /* Adjustments for small screens */
 @media (max-width: 768px) {
   .right-sidebar-content{
@@ -73,7 +83,7 @@
     display: none;
   }
   .afterMedia {
-    
+    z-index: -10;
     position: fixed;
     top: 0;
     left: 0;

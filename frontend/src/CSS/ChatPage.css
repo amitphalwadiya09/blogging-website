@@ -4,6 +4,9 @@
   height: 100vh;
   flex-direction: row;
 }
+.left-sidebar {
+  display: none;
+}
 
 /* Sidebar (username list) */
 .chat-sidebar {
@@ -61,7 +64,14 @@
 }
 
 @media (min-width: 768px) {
-
+  .left-sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    display: none;
+}
 }
 /* Main chat section */
 @media (min-width: 768px) {.chat-main-container {
@@ -100,6 +110,7 @@
   .main-container {
     flex-direction: column;
     margin-left: 0px;
+    z-index: 100;
   }
   .chat-input-container {
     margin-bottom: 100px;
@@ -123,4 +134,29 @@
   .chat-main{
     height: 90%;
   }
+  .left-sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    display: none;
 }
+}
+@media (max-width: 768px) {
+  .left-sidebar {
+    display: none;
+  }
+}
+/* ChatPage.css */
+
+/* Add styles for the chat container */
+.main-container {
+  display: flex;
+}
+
+.chat-sidebar.hidden {
+  display: none;
+}
+
+/* Other styles */
