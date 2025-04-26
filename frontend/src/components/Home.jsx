@@ -12,6 +12,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
+        
       <div className="feed-outlet-container">
         <Feed />
         <Outlet />
