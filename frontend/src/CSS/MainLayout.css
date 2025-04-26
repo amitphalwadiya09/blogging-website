@@ -38,7 +38,7 @@
         height: auto;
         border-right: none; /* Remove the right border */
         border-bottom: 1px solid #ddd; /* Add bottom border */
-        display: none;
+        /* display: none; */
     }
 
     .content {
