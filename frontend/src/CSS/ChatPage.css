@@ -70,7 +70,7 @@
     height: auto;
     border-right: none;
     border-bottom: 1px solid #ddd;
-    display: none;
+    display: inline-block;
 }
 }
 /* Main chat section */
