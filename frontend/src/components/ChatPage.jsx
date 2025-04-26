@@ -23,7 +23,7 @@ const ChatPage = () => {
   const sendMessageHandler = async (receiverId) => {
     try {
       const res = await axios.post(
-        `https://instagram-eu2m.onrender.com/api/v1/message/send/${receiverId}`,
+        `https://blogging-website-l0oj.onrender.com/api/v1/message/send/${receiverId}`,
         { textMessage },
         {
           headers: {

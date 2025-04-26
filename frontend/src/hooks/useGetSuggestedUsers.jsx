@@ -9,7 +9,7 @@ const useGetSuggestedUsers = () => {
     const fetchSuggestedUsers = async () => {
       try {
         const res = await axios.get(
-          "https://instagram-eu2m.onrender.com/api/v1/user/suggested",
+          "https://blogging-website-l0oj.onrender.com/api/v1/user/suggested",
           { withCredentials: true }
         );
         if (res.data.success) {

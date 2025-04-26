@@ -28,7 +28,7 @@ const Login = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "https://instagram-eu2m.onrender.com/api/v1/user/login",
+        "https://blogging-website-l0oj.onrender.com/api/v1/user/login",
         input,
         {
           headers: {

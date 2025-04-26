@@ -27,7 +27,7 @@ const Signup = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "https://instagram-eu2m.onrender.com/api/v1/user/register",
+        "https://blogging-website-l0oj.onrender.com/api/v1/user/register",
         input,
         {
           headers: {

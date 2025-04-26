@@ -1,13 +1,11 @@
-
-
-import React from 'react';
-import Posts from './Posts';
-import '../CSS/Feed.css';
+import React from "react";
+import Posts from "./Posts";
+import "../CSS/Feed.css";
 
 const Feed = () => {
   return (
-    <div className='feed'>
-      <Posts/>
+    <div className="feed">
+      <Posts />
     </div>
   );
 };

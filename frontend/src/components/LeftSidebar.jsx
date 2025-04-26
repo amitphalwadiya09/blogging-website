@@ -32,7 +32,7 @@ const LeftSidebar = ({ className }) => {
   const logoutHandler = async () => {
     try {
       const res = await axios.get(
-        "https://instagram-eu2m.onrender.com/api/v1/user/logout",
+        "https://blogging-website-l0oj.onrender.com/api/v1/user/logout",
         {
           withCredentials: true,
         }

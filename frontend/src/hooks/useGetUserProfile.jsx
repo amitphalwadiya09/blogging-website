@@ -10,7 +10,7 @@ const useGetUserProfile = (userId) => {
     const fetchUserProfile = async () => {
       try {
         const res = await axios.get(
-          `https://instagram-eu2m.onrender.com/api/v1/user/${userId}/profile`,
+          `https://blogging-website-l0oj.onrender.com/api/v1/user/${userId}/profile`,
           { withCredentials: true }
         );
         if (res.data.success) {
